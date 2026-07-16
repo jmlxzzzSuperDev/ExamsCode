@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>Personal Information Form</h1>
+    </header>
+    <main>
+        <div id="inputFields">
+            <form>
+                <label for="personName">Name:</label>
+                <input type="text" id="personName" required><br>
+
+                <label for="personAge">Age:</label>
+                <input type="text" id="personAge" required><br>
+
+                <label for="personBirthday">Birthday:</label>
+                <input type="text" id="personBirthday" required><br>
+
+                <label for="personAddress">Address:</label>
+                <input type="text" id="personAddress" required><br>
+
+                <label for="personEmail">Email:</label>
+                <input type="text" id="personEmail" required><br>
+
+                <label for="personStatus">Status:</label>
+                <input type="text" id="personStatus" required><br>
+
+                <fieldset>
+                    <label>Gender:</label><br>
+
+                    <input type="radio" name="personsGender" id="male" value="Male">
+                    <label for="male">Male</label><br>
+
+                    <input type="radio" name="personsGender" id="female" value="Female">
+                    <label for="female">Female</label><br>
+
+                    <input type="radio" name="personsGender" id="others" value="Others">
+                    <label for="others">Others</label>
+                </fieldset>
+
+                <fieldset>
+                    <label>Interests:</label><br>
+
+                    <input type="checkbox" name="personsInterests" id="reading" value="Reading">
+                    <label for="reading">Reading</label><br>
+
+                    <input type="checkbox" name="personsInterests" id="cooking" value="Cooking">
+                    <label for="cooking">Cooking</label><br>
+
+                    <input type="checkbox" name="personsInterests" id="swimming" value="Swimming">
+                    <label for="swimming">Swimming</label><br>
+
+                    <input type="checkbox" name="personsInterests" id="watching" value="Watching">
+                    <label for="watching">Watching</label>
+                </fieldset>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </form>
+        </div>
+        <div id="outputFields">
+            <table id="outputTable" border="1">
+                <thead>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Birthday</th>
+                    <th>Address</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th>Gender</th>
+                    <th>Interests</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
